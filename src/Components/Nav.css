@@ -1,0 +1,73 @@
+.navbar-absolute {
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1029;
+}
+
+.button.is-warning2 {
+    background-color: white;
+}
+
+.navbar.navbar-transparent {
+    background-color: #ffffff0a!important;
+    box-shadow: none;
+    color: #fff;
+}
+
+.navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.navbar {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px 0 rgb(5 33 235 / 24%);
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    padding: 0.2rem 1rem;
+}
+
+
+.navbar-start{
+    background-color: white;
+}
+
+.container-fluid {
+    padding-right: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+    background-color: white;
+
+}
+
+.justify-content-end {
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+}
+
+.button.is-warning.is-active {
+    background-color: white;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.button.is-warning:hover, .button.is-warning.is-hovered {
+    background-color: white;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-item{
+    color: #121212;
+}
+

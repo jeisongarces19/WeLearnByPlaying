@@ -1,0 +1,51 @@
+.cardTabla {
+    position: relative;
+    display: flex;
+    /*padding: 20px 10px 25px;
+    border: 1px solid rgb(0 0 0 / 99%);*/
+    flex-direction: column;
+    background-color: #ffffff00;
+    background-clip: border-box;
+    
+    border-radius: 1.25rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+   
+}
+
+.cardTablaU {
+    position: relative;
+    display: flex;
+    padding: 20px 10px 25px;
+    flex-direction: column;
+    background-color: #ffffff9e;
+    background-clip: border-box;
+    border: 1px solid rgb(0 0 0 / 99%);
+    border-radius: 1.25rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+.opcionesletra{
+
+    font-size: 2.7rem !important;
+    font-family: math;
+    color: #000000;
+}
+
+.fondoo{
+    background-color: #ffffff9e;
+}
+
+.negrillaAP{
+    font-weight: 600;
+}
+
+.elform{
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: system-ui;
+    padding: 10px 10px 10px;
+}

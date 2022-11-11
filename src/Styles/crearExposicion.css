@@ -1,0 +1,20 @@
+.cardCrearExposicion {
+    position: relative;
+    display: flex;
+    padding: 20px 10px 25px;
+    /* flex-direction: column; */
+    background-color: #ffffff94;
+    /* background-clip: border-box; */
+    border: 1px solid rgb(0 0 0 / 58%);
+    border-radius: 1.25rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center;
+}
+
+.crearExposicionletra{
+    font-size: 2.4rem !important;
+    font-family: math;
+    color: #000000;
+    text-align: center;
+}

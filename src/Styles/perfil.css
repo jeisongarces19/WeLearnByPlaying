@@ -1,0 +1,45 @@
+.cardPerfil {
+    position: relative;
+    display: flex;
+    padding: 20px 10px 25px;
+    /* flex-direction: column; */
+    background-color: #ffffff00;
+    /* background-clip: border-box; 
+    border: 1px solid rgb(0 0 0 / 58%);*/
+    border-radius: 1.25rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center;
+}
+
+.perfilletra{
+    font-size: 2.7rem !important;
+    font-family: math;
+    color: #000000;
+    text-align: center;
+}
+
+.photo-container {
+    width: 40%;
+    height: 60%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px 0 rgb(0 0 0 / 30%);
+    transition: box-shadow .4s,-webkit-transform .4s;
+    transition: transform .4s,box-shadow .4s,-webkit-transform .4s;
+    background-color: #fff;
+    margin-top: 30%;
+}
+
+.formPerfil {
+    
+    /*background-color: #fff;
+    margin-top: 30%;*/
+}
+
+.inputPerfil{
+    background-color: #fff;
+    float: left;
+}
+

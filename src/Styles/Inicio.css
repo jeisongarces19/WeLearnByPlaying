@@ -1,0 +1,233 @@
+/* aqui es para la estructura del prototipo 1 */
+
+.cardDivInicio {
+    /*max-width: max-content;*/
+    position: relative;
+    padding: 10px 80px 10px;
+    /* flex-direction: initial; */
+    background-color: transparent;
+    /* background-clip: border-box; */
+    /* border: 1px solid rgb(0 0 0); */
+    border-radius: 1.25rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    /* justify-content: center; */
+}
+
+.cardTituloInicio {
+    /*max-width: max-content;*/
+    position: relative;
+    /*padding: 10px 10px 10px;
+     flex-direction: initial;
+    background-color: #ffffff6e; */
+    /* background-clip: border-box; */
+    /* border: 1px solid rgb(0 0 0); 
+    border-radius: 1.25rem;*/
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center;
+}
+
+.loginletraTituloInicio{   
+    font-size: 2.1cm;
+    font-family: auto cursive;
+    color: #000000;
+}
+
+.cardSubtituloInicio {
+    /*width: max-content;*/
+    position: relative;    
+    justify-content: center;
+}
+
+
+.LetraSubtituloInicio{
+    font-size: 3rem !important;
+    font-family: emoji cursive;
+    color: #000000;
+    text-align: center;
+}
+
+
+.LetraParrafoInicio{
+    font-size: 1.3rem !important;
+    font-family: emoji cursive;
+    color: #000000;
+    text-align: center;
+}
+
+.cardGerenalInicio {
+    max-width: max-content;
+    position: relative;
+    padding: 10px 10px 10px;
+    /* flex-direction: initial; */
+    background-color: #ffffff4d;
+    /* background-clip: border-box; */
+    /* border: 1px solid rgb(0 0 0); */
+    border-radius: 1.25rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    /* justify-content: center; */
+}
+
+
+.cardInformacionInicio {
+    max-width: min-content;
+    position: relative;
+    padding: 10px 10px 10px;
+    /* flex-direction: initial; */
+    background-color: #f55353de;
+    /* background-clip: border-box; */
+    /* border: 1px solid rgb(0 0 0); */
+    border-radius: 1.25rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    /* justify-content: center; */
+}
+
+
+
+.cardImagenInicio {
+    max-width: max-content;
+    position: relative;
+    padding: 10px 10px 10px;
+    /* flex-direction: initial; 
+    background-color: #ffffff4d;*/
+    /* background-clip: border-box; */
+    /* border: 1px solid rgb(0 0 0); */
+    border-radius: 1.25rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center;
+}
+
+
+
+.centralInicio{
+    padding: 40px 0px 80px;
+    
+}
+
+
+
+
+
+.bibliografiaInicio {
+    /* aqui es la bibliografia*/
+    
+    background: #e18181;
+    max-width: 320px;
+    text-align: center;
+    margin: 5px;
+}
+
+.boxxInicio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400;
+    bgcolor: background.paper;
+    brder: 2px solid #000;
+    boxShadow: 24;
+    p: 4;
+    width: 90%;
+}
+
+
+
+.contenedorInicio{
+    position: relative;
+    padding-top: 50%;
+}
+
+
+.react-playerInicio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 5px 8px;
+    background-color: darkblue;
+}
+
+
+
+.titleInicio {
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+
+
+.fondobacInicio{
+  /*background-image: url("https://scontent.fclo11-1.fna.fbcdn.net/v/t31.18172-8/26233828_738222389708384_7813581133273196225_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGot4jlSLhpspSS0viVMtV6eZppP3A2hsN5mmk_cDaGw7RHbBQfhMw4MH6vRqyn5Cp44ufO4h8trFhWpaO5HgO8&_nc_ohc=GLjLjSRzJuEAX-6ZSBq&_nc_ht=scontent.fclo11-1.fna&oh=00_AT9h8jWgvSacye-WJboE_TXLsFBfqPqE20ndrLmYwHv8aA&oe=62C40AB6");
+   position: inherit;
+  overflow: hidden;
+  display: block;
+  background-color: rgb(0 137 255);*/
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 0;  
+  
+  left: 0;
+  top: 0;
+  
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+
+
+
+
+.cardComentarioInicio {
+    position: relative;
+    padding: 15px 15px 1px;
+    /* flex-direction: initial; */
+    background-color: #ffffffcc;
+    /* background-clip: border-box; */
+    border: 1px solid rgb(0 0 0 / 72%);
+    border-radius: 1.35rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    /* justify-content: center; */
+}
+
+
+
+.posicionAsisAuInicio {
+    position: relative;
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+.AudioAuInicio {
+    position: fixed;
+    /* border-radius: 20px; */
+    /* background-color: #3bb1a04d; */
+    max-width: 70px;
+    max-height: 68px;
+    /* bottom: 290px; */
+    top: 100px;
+    /* color: white; */
+    /* border: 10px; */
+}
+
+.AudioAu2Inicio{
+    position: fixed;
+    /* border-radius: 20px; */
+    /* background-color: #3bb1a04d; */
+    max-width: 30px;
+    max-height: 10px;
+    /* bottom: 290px; */
+    top: 100px;
+    /* color: white; */
+    /* border: 10px; */
+}
+
+.AsistenteInicio{
+    width: 85%;
+}

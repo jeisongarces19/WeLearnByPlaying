@@ -1,0 +1,163 @@
+.Recuperacion{
+	color: black;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.central{
+    padding: 40px 0px 80px;
+    
+}
+
+.button.is-success {
+    background-color: #48a4c7c7;
+    border-color: #0000003b;
+    color: #fff;
+    border-radius: 8px
+}
+
+.button.is-primary {
+    background-color: #48a4c7c7;
+    border-color: #0000003b;
+    color: #fff;
+    border-radius: 8px
+}
+
+.tv{
+    float: none;
+    /* width: 100%; */
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.tv-unit {
+    /* position: relative; */
+    background-color: #1C91C0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+}
+
+
+
+
+
+
+.playlist-unit {
+    background-color: #275b7d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.playlist-unit-inner {
+    position: relative;
+    background-color: #173c54;
+    border-radius: 5px;
+}
+
+.list-indicators {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: .8em;
+    padding: 3px 0;
+}
+
+.list-indicators .ind.active .ind:hover {
+    background-color: #fff;
+}
+
+.ind {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #1C91C0;
+    margin: 0 3px;
+}
+
+.v-title {
+    /* position: relative; */
+    padding: 5px;
+    font-size: .85em;
+}
+
+.img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    border-radius: 5px;
+    background-image: url(https://img.youtube.com/vi/NwuT87AMtCk/default.jpg);
+    cursor: pointer;
+}
+
+.v-thumb {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    /* background-color: #000; */
+    /* border-radius: 5px; */
+    /* overflow: hidden; */
+}
+
+.playlist .listing {
+    position: relative;
+    margin: 0 37px;
+    min-height: 140px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor{
+    position: relative;
+    padding-top: 50%;
+}
+
+.react-player{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 5px 8px;
+    background-color: darkblue;
+}
+
+.audio{
+    position: fixed;
+    top: 20%;
+    left: 0;
+}
+
+
+.adminExpoletra{
+    font-size: 2.3rem !important;
+    font-family: math;
+    color: #000000;
+}
+
+
+
+.styles_containerPoke__hr88Z {
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px 15px 0px;
+
+}
+
+

@@ -1,0 +1,127 @@
+/* aqui es para la estructura del prototipo 1 */
+
+.cardDivKit {
+    max-width: max-content;
+    position: relative;
+    padding: 10px 80px 10px;
+    /* flex-direction: initial; */
+    background-color: transparent;
+    /* background-clip: border-box; */
+    /* border: 1px solid rgb(0 0 0); */
+    border-radius: 1.25rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    /* justify-content: center; */
+}
+
+.cardTituloKit {
+    /*max-width: max-content;*/
+    position: relative;
+    /*padding: 10px 10px 10px;
+     flex-direction: initial;
+    background-color: #ffffff6e; */
+    /* background-clip: border-box; */
+    /* border: 1px solid rgb(0 0 0); 
+    border-radius: 1.25rem;*/
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center;
+}
+
+.loginletraTituloKit{
+    font-size: 2cm;
+    font-family: auto cursive;
+    color: #000000;
+}
+
+
+.LetraSubtitulokit{
+    font-size: 3rem !important;
+    font-family: emoji cursive;
+    color: #000000;
+    text-align: center;
+}
+
+.LetraParrafokit{
+    font-size: 1.1rem !important;
+    font-family: emoji cursive;
+    color: #000000;
+    text-align: center;
+}
+
+.cardGerenalKit {
+    /* max-width: max-content; */
+    position: relative;
+    padding: 10px 50px 10px;
+    /* flex-direction: initial; */
+    background-color: #ffffff4d;
+    /* background-clip: border-box; */
+    /* border: 1px solid rgb(0 0 0); */
+    border-radius: 1.25rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center;
+}
+
+
+
+.reducirKit{
+    padding: 10px 30px 0px;
+}
+
+.reducirKitAct{
+    padding: 0px 10px 0px;
+}
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(auto);
+}
+
+
+
+.boxxkit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400;
+    bgcolor: background.paper;
+    brder: 2px solid #000;
+    boxShadow: 24;
+    p: 4;
+    width: 90%;
+}
+
+
+.fondobackit{
+  /*background-image: url("https://scontent.fclo11-1.fna.fbcdn.net/v/t31.18172-8/26233828_738222389708384_7813581133273196225_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGot4jlSLhpspSS0viVMtV6eZppP3A2hsN5mmk_cDaGw7RHbBQfhMw4MH6vRqyn5Cp44ufO4h8trFhWpaO5HgO8&_nc_ohc=GLjLjSRzJuEAX-6ZSBq&_nc_ht=scontent.fclo11-1.fna&oh=00_AT9h8jWgvSacye-WJboE_TXLsFBfqPqE20ndrLmYwHv8aA&oe=62C40AB6");
+   position: inherit;
+  overflow: hidden;
+  display: block;
+  background-color: rgb(0 137 255);*/
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 0;  
+  
+  left: 0;
+  top: 0;
+  
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+

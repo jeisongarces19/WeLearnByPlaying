@@ -1,0 +1,62 @@
+
+.centralLogin{
+    padding: 40px 0px 80px;
+    
+}
+
+
+.cardimagLogin {
+    position: relative;
+    display: flex;    
+    padding: 40px 30px 35px;
+    flex-direction: column;    
+    background-color: #ffffff0f;
+    background-clip: border-box;
+    border-radius: 1.25rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cardlogin {
+    position: relative;
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: wrap;     
+    align-content: space-around;
+    justify-content: center;
+
+}
+
+.columnlogin{
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+.loginletra{
+    font-size: 2.4rem !important;
+    font-family: math;
+    color: #000000;
+}
+
+
+.FondoInputL{
+    
+    background-color: #ffffffc4;
+    border: 1px solid rgb(0 0 0 / 50%);
+    border-radius: 1.00rem;
+    padding: 5px 20px 5px;
+
+}
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+[
+   {
+      "id":"1",
+      "name": "Estudiante",
+      "last_name_1": "garces",
+      "last_name_2": "Castañeda",
+      "type_document": "CC",
+      "document": "123456789",
+      "password": "E5tud1iant3",
+      "rol_id":1,
+      "picture": "https://scontent.fclo9-1.fna.fbcdn.net/v/t1.6435-9/175924913_3511858895581162_3351700108602163966_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE2sX9PjP8p9Hz60Xo5IbEqwhymyoDr9VDCHKbKgOv1UGP6bpPBKUWJL5tFEIIocvBaoBkwFiAgrrRxFnZISuWT&_nc_ohc=JZdKQu1i94MAX9_YB76&_nc_ht=scontent.fclo9-1.fna&oh=00_AT-Qjm1bXtW-Cio6OuQdOE8lMGTmGW9mYCI5odbzmMRqBw&oe=636EC4E4",
+      "describe": "prueba",
+      "grade": "3",
+      "curse": "Matematicas"
+   },
+   {
+      "id":"2",
+      "name": "Profesor",
+      "last_name_1": "garces",
+      "last_name_2": "Castañeda",
+      "type_document": "CC",
+      "document": "1234567",
+      "password": "Pr0f3s0r",
+      "rol_id":2,
+      "picture": "https://www.facebook.com/photo?fbid=2560962130670848&set=a.102553006511785",
+      "describe": "prueba",
+      "grade": "2",
+      "curse": "Español"
+   },
+   {
+      "id":"3",
+      "name": "Administrador",
+      "last_name_1": "garces",
+      "last_name_2": "Castañeda",
+      "type_document": "CC",
+      "document": "12345678",
+      "password": "Adm1n15trad0r",
+      "rol_id":3,
+      "picture": "https://www.facebook.com/photo?fbid=2560962130670848&set=a.102553006511785",
+      "describe": "prueba",
+      "grade": "2",
+      "curse": "Español"
+   },
+   {
+      "id":"4",
+      "nombre":"Gelatina de Fresa",
+      "stock":"60",
+      "precio":"1.50",
+      "url":"gelatina-de-fresa",
+      "img":"gf.jpg",
+      "fecha":"2018-08-11 16:25:39"
+   },
+   {
+      "id":"5",
+      "nombre":"Suspiro a la Limeña",
+      "stock":"26",
+      "precio":"6.00",
+      "url":"suspiro-a-la-limeña",
+      "img":"sl.jpg",
+      "fecha":"2019-06-17 15:58:43"
+   },
+   {
+      "id":"6",
+      "nombre":"Mazamorra Morada",
+      "stock":"50",
+      "precio":"3.00",
+      "url":"mazamorra-morada",
+      "img":"mm.png",
+      "fecha":"2018-08-11 16:25:45"
+   }
+]

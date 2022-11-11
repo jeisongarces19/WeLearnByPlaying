@@ -1,0 +1,91 @@
+.Fondoc{
+    background-size: cover;
+    position:  fixed;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    
+}
+
+.Fondoc:before{
+    content:'';
+    position:  fixed;
+    background-color: rgb(0 0 0 / 35%);;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.Fondo2c{
+    background-size: cover;
+    position:  fixed;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    
+}
+.Fondo2c:before{
+    content:'';
+    position:  fixed;
+    background-color: rgb(0 3 100 / 27%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+
+}
+
+.normal{
+    background-size: cover;
+    position:  fixed;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    
+}
+
+.normal:before{
+    content:'';
+    position:  fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.afuera{
+  position: absolute;
+  border-radius: 20px;
+
+}
+
+.posicion{
+  display: flex;  
+  flex-direction: row-reverse;
+  padding: 4px 4pc;
+  margin-top: 40px;
+
+}
+
+.color{
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  left: 20px;
+
+}
+.color1{
+  position: absolute;
+  background-color: #706f6fab;
+  border-radius: 20px;
+  left: 20px;
+
+}
+.color2{
+  position: absolute;
+  background-color: #1f50db8f;
+  border-radius: 20px;
+
+}

@@ -1,0 +1,49 @@
+
+
+.centralReg{
+    padding: 40px 0px 70px;
+    
+}
+.cardRegistrarse{
+    position: relative;
+    display: flex;
+    
+    padding: 20px 10px 25px;
+    flex-direction: column;    
+    background-color: #ffffff0d;
+    background-clip: border-box;
+    /*border: 1px solid rgb(0 0 0 / 58%);*/
+    border-radius: 1.25rem;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    background-image: url("https://images.app.goo.gl/8aZuUQfBnKMkceVX7");
+
+}
+
+.registerletra{
+
+    font-size: 2.7rem !important;
+    font-family: math;
+    color: #000000;
+}
+
+
+.FondoInputReg{
+    
+    background-color: #ffffffc4;
+    border: 1px solid rgb(0 0 0 / 50%);
+    border-radius: 1.00rem;
+    padding: 5px 20px 5px;
+
+}
+
+
+
+
+
+
+
+
+
+

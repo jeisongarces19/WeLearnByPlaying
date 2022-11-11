@@ -1,0 +1,276 @@
+/* aqui es para la estructura del prototipo 1 */
+
+.cardtituloExpo {
+    position: relative;
+    padding: 10px 10px 10px;
+    /* flex-direction: initial; 
+    max-width: min-content;
+    background-color: #ffffffcc;*/
+    /* background-clip: border-box; 
+    border: 1px solid rgb(0 0 0);
+    border-radius: 1.25rem;*/
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center; 
+}
+
+.cardImagenExpo {
+    position: relative;
+    padding: 10px 10px 10px;
+    /* flex-direction: initial; 
+    max-width: min-content;
+    background-color: #ffffffcc;*/
+    /* background-clip: border-box; 
+    border: 1px solid rgb(0 0 0);
+    border-radius: 1.25rem;*/
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center; 
+    width: 50%;
+}
+
+.ExposicionletraT{
+    font-size: 2.5rem !important;
+    font-family: math;
+    color: #000000;
+    text-align: center;
+}
+
+
+.cardsubtituloExpo {
+    position: relative;
+    padding: 10px 10px 10px;
+    /* flex-direction: initial; 
+    max-width: min-content;
+    background-color: #ffffffcc;*/
+    /* background-clip: border-box; 
+    border: 1px solid rgb(0 0 0);
+    border-radius: 1.25rem;*/
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center; 
+}
+
+.ExposicionletraS{
+    font-size: 1.45rem !important;
+    font-family: math;
+    color: #000000;
+    text-align: center;
+}
+
+
+.cardDescriptionExpo {
+    position: relative;
+    padding: 10px 10px 0px;
+    background-color: #ffffff73;
+    border-radius: 1.25rem;
+    max-width: max-content;
+    /* flex-direction: initial; 
+    
+    */
+    /* background-clip: border-box; 
+    border: 1px solid rgb(0 0 0);
+    */
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center; 
+}
+
+.reducirActivityExpo{
+    padding: 10px 50px 0px;
+}
+
+.cardVideoExpo {
+    position: relative;
+    padding: 10px 10px 10px;
+    /* flex-direction: initial; 
+    max-width: min-content;
+    background-color: #ffffffcc;*/
+    /* background-clip: border-box; 
+    border: 1px solid rgb(0 0 0);
+    border-radius: 1.25rem;*/
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center; 
+    width: 50%;
+}
+
+
+.ExposicionletraD{
+    font-size: 1.2rem !important;
+    font-family: math;
+    color: #000000;
+    text-align: center;
+}
+
+
+
+
+
+.cardEditarExposicionExpo{
+    position: relative;
+    padding: 10px 10px 10px;
+    /* flex-direction: initial; 
+    max-width: min-content;
+    background-color: #ffffffcc;*/
+    /* background-clip: border-box; 
+    border: 1px solid rgb(0 0 0);
+    border-radius: 1.25rem;*/
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center; 
+}
+
+
+.stylesActividad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    background-color: #E9E9E9;
+    padding: 10px 0;
+}
+
+
+.cardactividadExpo {
+    position: relative;
+    padding: 10px 10px 10px;
+    /* flex-direction: initial; 
+    max-width: min-content;
+    background-color: #ffffffcc;*/
+    /* background-clip: border-box; 
+    border: 1px solid rgb(0 0 0);
+    border-radius: 1.25rem;*/
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center; 
+}
+
+
+
+
+
+
+.centralExpo{
+    padding: 40px 0px 80px;
+    
+}
+
+
+
+
+.bibliografiaExpo {
+    /* aqui es la bibliografia*/
+    
+    
+    max-width: 320px;
+    text-align: center;
+    margin: 5px;
+}
+.boxxExpo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400;
+    bgcolor: background.paper;
+    brder: 2px solid #000;
+    boxShadow: 24;
+    p: 4;
+    width: 90%;
+}
+
+
+
+
+
+
+
+.title {
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+
+
+
+
+.fondobacExpo{
+  /*background-image: url("https://scontent.fclo11-1.fna.fbcdn.net/v/t31.18172-8/26233828_738222389708384_7813581133273196225_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGot4jlSLhpspSS0viVMtV6eZppP3A2hsN5mmk_cDaGw7RHbBQfhMw4MH6vRqyn5Cp44ufO4h8trFhWpaO5HgO8&_nc_ohc=GLjLjSRzJuEAX-6ZSBq&_nc_ht=scontent.fclo11-1.fna&oh=00_AT9h8jWgvSacye-WJboE_TXLsFBfqPqE20ndrLmYwHv8aA&oe=62C40AB6");
+   position: inherit;
+  overflow: hidden;
+  display: block;
+  background-color: rgb(0 137 255);*/
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 0;  
+  
+  left: 0;
+  top: 0;
+  
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+
+
+
+
+
+
+.cardaudioExpo{
+    /*max-width: 300px;*/
+    max-width: max-content;
+    position: relative;
+    /* padding: 15px 15px 1px; */
+    /* flex-direction: initial; */
+    background-color: #ffffffcc;
+    /* background-clip: border-box; */
+    border: 1px solid rgb(0 0 0 / 72%);
+    border-radius: 1.35rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    /* justify-content: center; */
+
+}
+
+
+.posicionAsisAuExpo {
+    position: relative;
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+.AudioAu {
+    position: fixed;
+    /* border-radius: 20px; */
+    /* background-color: #3bb1a04d; */
+    max-width: 70px;
+    max-height: 68px;
+    /* bottom: 290px; */
+    top: 100px;
+    /* color: white; */
+    /* border: 10px; */
+}
+
+.AudioAu2{
+    position: fixed;
+    /* border-radius: 20px; */
+    /* background-color: #3bb1a04d; */
+    max-width: 30px;
+    max-height: 10px;
+    /* bottom: 290px; */
+    top: 100px;
+    /* color: white; */
+    /* border: 10px; */
+}
+
+
+.styles_containerPoke__gJ8kM {
+    
+    gap: 30px;
+   
+}
