@@ -109,7 +109,7 @@ function BasicModal(props) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
         >
-          <img  className="boxxExpo" src={imagen2} alt="No cargo la imagen" />
+          <img  className="boxxExpo" src={imagen2} alt="I don't upload the image" />
          
         </Modal>
         </div>
@@ -152,7 +152,7 @@ function PaginasExposiciones (props) {
 
             <BasicModal imagen={Expo.path}></BasicModal>
                     <div className={styles.imgContainer}>
-                        <img src={Expo.path} alt="No cargo la imagen" >
+                        <img src={Expo.path} alt="I don't upload the image" >
                         </img>           
                     </div>         
               
@@ -290,7 +290,7 @@ function PROTOTIPO1(props){
         <div className="reducirActivityExpo">
             <div className="cardDescriptionExpo">
                 {Informacion.text2.length===0 ?(
-                    <h2>Cargando Parrafos...</h2>
+                    <h2>Loading Paragraphs...</h2>
                     ):( 
                         <Parrafos informacionsub={Informacion.text2}></Parrafos>                                                                       
                     )
@@ -308,7 +308,7 @@ function PROTOTIPO1(props){
         <div className="cardVideoExpo">
 
             {Informacion.video2.length===0 ?(
-                <h2>Cargando videos...</h2>
+                <h2>Loading Videos...</h2>
                 ):( 
                     <Videos informacionvideo={Informacion.video2}></Videos>                                                   
                     
@@ -320,7 +320,7 @@ function PROTOTIPO1(props){
         
         <div className="cardImagenExpo">
             {Informacion.path2.length===0 ?(
-                <h2>Cargando imagenes...</h2>
+                <h2>Loading Imagen...</h2>
                 ):( 
                     <PaginasExposiciones informacionpath={Informacion.path2}></PaginasExposiciones>                                                    
                     
@@ -360,7 +360,7 @@ function PROTOTIPO2(props){
         <div className="reducirActivityExpo">
             <div className="cardDescriptionExpo">
                 {Informacion.text2.length===0 ?(
-                    <h2>Cargando Parrafos...</h2>
+                    <h2>Loading Paragraphs...</h2>
                     ):( 
                         <Parrafos informacionsub={Informacion.text2}></Parrafos>                                                                       
                     )
@@ -372,7 +372,7 @@ function PROTOTIPO2(props){
         
         <div className="cardImagenExpo">
             {Informacion.path2.length===0 ?(
-                <h2>Cargando imagenes...</h2>
+                <h2>Loading Images...</h2>
                 ):( 
                     <PaginasExposiciones informacionpath={Informacion.path2}></PaginasExposiciones>                                                    
                     
@@ -390,7 +390,7 @@ function PROTOTIPO2(props){
         <div className="cardVideoExpo">
 
             {Informacion.video2.length===0 ?(
-                <h2>Cargando videos...</h2>
+                <h2>Loading Videos...</h2>
                 ):( 
                     <Videos informacionvideo={Informacion.video2}></Videos>                                                   
                     

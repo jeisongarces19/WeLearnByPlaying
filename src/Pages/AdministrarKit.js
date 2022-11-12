@@ -167,7 +167,7 @@ class AdministrarKit extends React.Component {
             }
 
         }else{        
-            var respuesta = await fetch(`https://fun-english-cali.herokuapp.co/Lesson/Search/title/`+this.state.data.busqueda, 
+            var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Lesson/Search/title/`+this.state.data.busqueda+`/lesson_type_id/`+2, 
             {
                 method: "GET",    
             });            
@@ -178,7 +178,7 @@ class AdministrarKit extends React.Component {
 
             if (statusrr===200) {
                 existe= await respuesta.json();  
-                console.log("existe",existe);              
+                //console.log("existe",existe);              
                 this.setState({
                     data: {
                         id:  this.state.data.id, 
@@ -205,7 +205,7 @@ class AdministrarKit extends React.Component {
                     <div className="cardAdmJuegos">
                     <center>
 
-                        <h1 className="adminExpoletra"> ¡KIT🧮! </h1>   
+                        <h1 className="adminExpoletra"> ¡KIT 🧮! </h1>   
 
                         <br></br>
 

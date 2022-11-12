@@ -17,22 +17,6 @@ const cookies = new Cookies();
 const id_ser3 = parseInt(cookies.get('idUser'));
 
 
-function ObservarDirecto(props) { 
-    //cookies.set('idexpo', props, {path: "/"});
-    //console.log("los props",props);
-    const continuar = () =>{
-        swal({
-          title: "¡Congratulations!",
-          text: "¡Now you can access this game!",
-          icon: "success",                        
-        });
-    }
-
-    continuar()
-    
-}
-
-
 function PaginasExposiciones (props) {
   const [pagina, setPagina] = useState (1);
   
@@ -88,44 +72,6 @@ function PaginasExposiciones (props) {
     </div>
   );
 }
-
-
-/*
-
-function PaginasExposiciones (props) {
-  const [pagina, setPagina] = useState (1);
-  const [porPagina, setPorPagina] = useState (3);
-
-  //console.log("Lo que llega a paginar paginas",props.todo)
-  //console.log("Lo del pokemon",Pokemons)
-
-  const maximo = Pokemons.length / porPagina;
-
-  return (
-    <div className={styles.container}>
-      <div className={styles.containerPoke}>
-      {Pokemons.slice (
-        (pagina - 1) * porPagina,
-        (pagina - 1) * porPagina + porPagina
-      ).map ((pokemon, i) => (
-        <div key={i} className={styles.pokeContainer}>
-          <h3>{pokemon.id}</h3>  
-          <div className={styles.imgContainer}>          
-            <img src={pokemon.img} alt={pokemon.name} />
-
-          </div>
-          <p >{pokemon.name}</p>  
-          <button > x </button>
-          
-        </div>
-      ))}
-      </div>
-
-      <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} />
-    </div>
-  );
-}
-*/
 
 
 class AdministrarJuegos extends React.Component {

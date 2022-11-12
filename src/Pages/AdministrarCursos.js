@@ -124,7 +124,7 @@ class AdministrarCursos extends React.Component{
         if (statusr===200) {
             existe= await respuesta.json(); 
 
-            console.log(existe)
+            //console.log(existe)
             
             this.setState({
                 data: {

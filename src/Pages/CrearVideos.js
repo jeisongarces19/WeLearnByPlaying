@@ -1,7 +1,6 @@
 import React from 'react';
 
-import '../Styles/CrearExposicionesV.css';
-import '../Styles/crearExposicion.css';
+import '../Styles/crearvideos.css';
 import styles from '../styles.module.scss';
 
 import swal from 'sweetalert';
@@ -10,7 +9,6 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
 const id_ser3 = parseInt(cookies.get('idUser'));
-
 
 function PaginasExposiciones (props) {
 
@@ -34,20 +32,16 @@ function PaginasExposiciones (props) {
   );
 }
 
-class CrearExposicionesVirtuales extends React.Component {
+class CrearVideos extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: {      
-                "user_id": id_ser3,     
-                "title":"give me a title",
-                "description":"Describe your exhibition",
-                "picture": "http://www.webquestcreator2.com/majwq/files/files_user/62538/hola-gif-21.gif",
-                "course_id":1,
-                "url":"",
-                "lesson_type_id":4,
-
-
+            data: {    
+                "user_id":id_ser3,  
+                "title":"Give me title",
+                "description":"Describe your Video ",
+                "picture": "https://i.blogs.es/106008/mejores-juegos-2021/840_560.jpeg",                
+                "lesson_type_id":3,
             },
         };
         this.manejarEnvioDeFormulario = this.manejarEnvioDeFormulario.bind(this);
@@ -59,20 +53,20 @@ class CrearExposicionesVirtuales extends React.Component {
     render() {
         return (
     
-            <div className="columns central">
+            <div className="columns centralcv">
 
               <div className="column"></div>
 
                 <div className="column" >
 
-                    <div className="cardCrearAdmExposiciones">
+                    <div className="cardCrearVideos">
                     <center>
-                        <h1 className="crearExposicionletra"> ¡ACTIVITIES! </h1>                
+                        <h1 className="crearExposicionvideos"> ¡Videos 🎥! </h1>                
                         
                         <form className="" onSubmit={this.manejarEnvioDeFormulario}>
 
                             <div className="form-group">                            
-                                <input autoFocus required placeholder="🆎Title ✔" type="text" id="title" className="FondoInput"  onChange={this.manejarCambio} value={this.state.data.title} >
+                                <input autoFocus required placeholder="🆎Title ✔" type="text" id="title" className="FondoInputCrearV"  onChange={this.manejarCambio} value={this.state.data.title} >
                                 </input> 
                                 
                             </div>
@@ -80,33 +74,19 @@ class CrearExposicionesVirtuales extends React.Component {
                             <span> </span>
 
                             <div className="form-group">
-                                <textarea rows="3" placeholder="☕ Describe" className="FondoInput" id="description"  onChange={this.manejarCambio} value={this.state.data.description}></textarea>
+                                <textarea rows="3" placeholder=" Describe your Video " className="FondoInputCrearV" id="description"  onChange={this.manejarCambio} value={this.state.data.description}></textarea>
                             </div>  
 
-                           
                             <div className="form-group">
-                                <input autoFocus required placeholder="🅱️ Imagen" type="text" id="picture"className="FondoInput"  onChange={this.manejarCambio} value={this.state.data.picture} >
+                                <input autoFocus required placeholder="🅱️ Picture" type="text" id="picture" className="FondoInputCrearV"  onChange={this.manejarCambio} value={this.state.data.picture} >
                                 </input>
-                            </div> 
+                            </div>  
 
-                            <div className="form-group">                            
-                                <input autoFocus required placeholder="🆎 ID Course ✔" type="number" id="course_id" className="FondoInput"  onChange={this.manejarCambio} value={this.state.data.course_id} >
-                                </input>                                 
-                            </div>   
-
-                            <div className="form-group">                            
-                                <input autoFocus required placeholder="🆎 URL ✔" type="text" id="url" className="FondoInput"  onChange={this.manejarCambio} value={this.state.data.url} >
-                                </input>                                 
-                            </div>     
-
-                            <div className="form-group">                            
-                                <input disabled autoFocus required placeholder="🆎 Type Activity ✔" type="number" id="lesson_type_id" className="FondoInput"  onChange={this.manejarCambio} value={this.state.data.lesson_type_id} >
-                                </input>                                 
-                            </div>   
+                                            
 
                             <div className="form-group">
                                 <button className="button is-primary mt-2">
-                                    Create Activity
+                                    Create Video 
                                 </button>
                             </div>   
                         </form>
@@ -131,17 +111,17 @@ class CrearExposicionesVirtuales extends React.Component {
         const continuar = () =>{
             swal({
               title: "¡Creation!",
-              text: "¡Your activity has been created!",
+              text: "¡Your Video  has been created!",
               icon: "success",              
             }).then(function() {
-                window.location = "/AdministrarGrados";
+                window.location = "/AdministrarVideos";
             });
         }
 
         const detener = () =>{
             swal({
-              title: "¡Error!",
-              text: "¡An error occurred while creating the activity!",
+              title : "¡Error!",
+              text: "¡An error occurred while creating the Video !",
               icon: "error",
               dangerMode: true,
             })
@@ -158,6 +138,8 @@ class CrearExposicionesVirtuales extends React.Component {
         const cargaUtil = JSON.stringify(this.state.data);
         //console.log(cargaUtil);   
 
+        
+
         var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Lesson/Create`, 
         {
             method: "POST",            
@@ -172,16 +154,15 @@ class CrearExposicionesVirtuales extends React.Component {
        
         
         if (statusr===201) {
+            //console.log(statusr)
            
             this.setState({
                 data: {
-                    "user_id": this.state.id_user,
-                    "title":"Bienvenido",
-                    "description":"Describe tu exposicion",
-                    "picture": "http://www.webquestcreator2.com/majwq/files/files_user/62538/hola-gif-21.gif",
-                    "course_id":'1',
-                    "url":'https://support.google.com/websearch/answer/118238?hl=es-419&co=GENIE.Platform%3DAndroid#:~:text=Busca%20la%20p%C3%A1gina.-,Copia%20la%20URL%20de%20las%20siguientes%20formas%20seg%C3%BAn%20el%20navegador,y%2C%20luego%2C%20presiona%20Copiar.',
-                    "lesson_type_id":4,
+                    "user_id":this.state.data.user_id,  
+                    "title":"Give me title",
+                    "description":"Describe your Video ",
+                    "picture": "https://i.blogs.es/106008/mejores-juegos-2021/840_560.jpeg",                    
+                    "lesson_type_id":3,
                 }
             });
 
@@ -190,18 +171,13 @@ class CrearExposicionesVirtuales extends React.Component {
         } else {        
             detener();
         }
+        
     }
 
     manejarCambio(evento) {
 
         const clave = evento.target.id;
         let valor = evento.target.value;
-        if(clave === "course_id") {
-            valor = parseInt(valor);
-        }      
-        if(clave === "lesson_type_id") {
-            valor = parseInt(valor);
-        }    
         this.setState(state => {
             const dataActualizado = state.data;            
             dataActualizado[clave] = valor;
@@ -212,4 +188,4 @@ class CrearExposicionesVirtuales extends React.Component {
     }
 
 }
-export default CrearExposicionesVirtuales;
+export default CrearVideos;

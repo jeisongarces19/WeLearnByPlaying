@@ -62,7 +62,7 @@ class CrearKits extends React.Component {
 
                     <div className="cardCrearJuegos">
                     <center>
-                        <h1 className="crearExposicionletra"> ¡Kits 🎮🕹! </h1>                
+                        <h1 className="crearExposicionletra"> ¡Kits 🧮! </h1>                
                         
                         <form className="" onSubmit={this.manejarEnvioDeFormulario}>
 
@@ -160,7 +160,7 @@ class CrearKits extends React.Component {
        
         
         if (statusr===201) {
-            console.log(statusr)
+            //console.log(statusr)
            
             this.setState({
                 data: {

@@ -89,43 +89,6 @@ function PaginasExposiciones(props) {
 }
 
 
-/*
-
-function PaginasExposiciones(props) {
-  const [pagina, setPagina]=useState (1);
-  const [porPagina, setPorPagina]=useState (3);
-
-  //console.log("Lo que llega a paginar paginas",props.todo)
-  //console.log("Lo del pokemon",Pokemons)
-
-  const maximo = Pokemons.length / porPagina;
-
-  return (
-    <div className={styles.container}>
-      <div className={styles.containerPoke}>
-      {Pokemons.slice (
-        (pagina - 1) * porPagina,
-        (pagina - 1) * porPagina + porPagina
-      ).map ((pokemon, i) => (
-        <div key={i} className={styles.pokeContainer}>
-          <h3>{pokemon.id}</h3>  
-          <div className={styles.imgContainer}>          
-            <img src={pokemon.img} alt={pokemon.name} />
-
-          </div>
-          <p >{pokemon.name}</p>  
-          <button > x </button>
-          
-        </div>
-      ))}
-      </div>
-
-      <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} />
-    </div>
-  );
-}
-*/
-
 
 class VerAdministrarGrados extends React.Component{
     constructor(props) {
@@ -317,8 +280,8 @@ class VerAdministrarGrados extends React.Component{
         
         const continuar = () =>{
             swal({
-              title: "¡Eliminar!",
-              text: "¡Eliminando Exposición!",
+              title: "¡Remove!",
+              text: "¡Eliminating Grade!",
               icon: "success",                        
             }).then(function() {
                 window.location = "/AdministrarGrados";                            

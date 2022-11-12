@@ -51,6 +51,11 @@ import CrearKits from './Pages/CrearKits';
 import EditarKit from './Pages/EditarKit';
 import AdministrarKit from './Pages/AdministrarKit';
 
+import Videos from './Pages/Videos';
+import CrearVideos from './Pages/CrearVideos';
+import EditarVideos from './Pages/EditarVideos';
+import AdministrarVideos from './Pages/AdministrarVideos';
+
 //import FondoApp from "../public/FondoApp.jpeg";
 import { Route, Switch } from "wouter";
 
@@ -223,6 +228,46 @@ class App extends React.Component {
               <br></br>                        
             </Route>
 
+            <Route path="/Videos">     
+              <br></br>
+              <br></br>               
+              <div className="bodyproyectLogin">
+                <Videos/> 
+                {/*<Asistente show="Login"></Asistente>*/}
+              </div>                              
+            </Route>
+
+            <Route path="/EditarVideos">     
+              <br></br>    
+              <br></br>
+              <br></br>             
+              <div className="bodyproyectLogin">
+                <EditarVideos/> 
+                {/*<Asistente show="Login"></Asistente>*/}
+              </div>                              
+            </Route>
+
+            <Route path="/CrearVideos">     
+              <br></br>      
+              <br></br>
+              <br></br>           
+              <div className="bodyproyectLogin">
+                <CrearVideos/> 
+                {/*<Asistente show="Login"></Asistente>*/}
+              </div>   
+              <br></br>                           
+            </Route>
+
+            <Route path="/AdministrarVideos">     
+              <br></br>  
+              <br></br>
+              <br></br>               
+              <div className="bodyproyectLogin">
+                <AdministrarVideos/> 
+                {/*<Asistente show="Login"></Asistente>*/}
+              </div>      
+              <br></br>                        
+            </Route>
 
 
             <Route path="/Login">

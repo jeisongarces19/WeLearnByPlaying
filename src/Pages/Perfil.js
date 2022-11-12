@@ -68,31 +68,31 @@ class Perfil extends React.Component {
         var Describe=Users.describe;
         var Picture=Users.picture;        
         
-        if (Name===null) {
+        if (Name==null) {
           Name="";
         }
-        if (Last_name_1===null) {
+        if (Last_name_1==null) {
           Last_name_1="";
         }
-        if (Last_name_2===null) {
+        if (Last_name_2==null) {
           Last_name_2="";
         }
-        if (Type_document===null) {
+        if (Type_document==null) {
           Type_document="";
         } 
-        if (Document===null) {
+        if (Document==null) {
           Document="";
         }        
-        if (Password===null) {
+        if (Password==null) {
           Password="";
         }
-        if (Rol_id===null) {
+        if (Rol_id==null) {
           Rol_id="";
         }
-        if (Describe===null) {
+        if (Describe==null) {
           Describe="";
         }
-        if (Picture===null) {
+        if (Picture==null) {
           Picture="";
         }
 

@@ -51,7 +51,7 @@ class CrearCursos extends React.Component {
 
                     <div className="cardCrearExposicion">
                     <center>
-                        <h1 className="crearExposicionletra"> ¡COURSES🎓! </h1>                
+                        <h1 className="crearExposicionletra"> ¡COURSES 🎓! </h1>                
                         
                         <form className="" onSubmit={this.manejarEnvioDeFormulario}>
 
@@ -142,7 +142,7 @@ class CrearCursos extends React.Component {
             body: cargaUtil,   
         });
 
-        console.log("respuesta de todo",respuesta) 
+        //console.log("respuesta de todo",respuesta) 
 
 
        

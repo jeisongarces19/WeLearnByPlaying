@@ -22,8 +22,8 @@ function ObservarDirecto(props) {
     cookies.set('idexpo', props, {path: "/"});
     const continuar = () =>{
         swal({
-          title: "¡Felicitaciones!",
-          text: "¡Ahora podras acceder a esta exposición!"+props+ "",
+          title: "¡Congratulations!",
+          text: "¡Now you can access this game!"+props+ "",
           icon: "success",                        
         }).then(function() {            
             window.location = "/ExposicionesVirtuales";            
@@ -89,42 +89,6 @@ function PaginasExposiciones (props) {
 }
 
 
-/*
-
-function PaginasExposiciones (props) {
-  const [pagina, setPagina] = useState (1);
-  const [porPagina, setPorPagina] = useState (3);
-
-  //console.log("Lo que llega a paginar paginas",props.todo)
-  //console.log("Lo del pokemon",Pokemons)
-
-  const maximo = Pokemons.length / porPagina;
-
-  return (
-    <div className={styles.container}>
-      <div className={styles.containerPoke}>
-      {Pokemons.slice (
-        (pagina - 1) * porPagina,
-        (pagina - 1) * porPagina + porPagina
-      ).map ((pokemon, i) => (
-        <div key={i} className={styles.pokeContainer}>
-          <h3>{pokemon.id}</h3>  
-          <div className={styles.imgContainer}>          
-            <img src={pokemon.img} alt={pokemon.name} />
-
-          </div>
-          <p >{pokemon.name}</p>  
-          <button > x </button>
-          
-        </div>
-      ))}
-      </div>
-
-      <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} />
-    </div>
-  );
-}
-*/
 
 
 class VerJuegos extends React.Component {
@@ -161,7 +125,7 @@ class VerJuegos extends React.Component {
         if (statusr===200) {
             existe= await respuesta.json(); 
 
-            console.log(existe)
+            //console.log(existe)
             
             this.setState({
                 data: {
@@ -190,7 +154,7 @@ class VerJuegos extends React.Component {
 
             if (statusr===200) {
                 existe2= await respuesta2.json(); 
-                console.log(existe2)
+                //console.log(existe2)
                 
                 this.setState({
                     data: {
@@ -245,7 +209,7 @@ class VerJuegos extends React.Component {
                         <br></br>
 
                         <div className="form-group">                                
-                            <input autoFocus required placeholder="Buscar Por Titulo" type="text" id="busqueda" className="FondoInput" onChange={this.manejarCambio} value={this.state.data.busqueda} >
+                            <input autoFocus required placeholder="Search By Title" type="text" id="busqueda" className="FondoInput" onChange={this.manejarCambio} value={this.state.data.busqueda} >
                             </input>
                         </div>
 
@@ -256,7 +220,7 @@ class VerJuegos extends React.Component {
                         </div>
 
                         {this.state.data.BusquedaExposicion.length===0 ?(
-                            <h3>Cargando...</h3>
+                            <h3>Loading...</h3>
                             ):( 
                                 <PaginasExposiciones todo={this.state.data.BusquedaExposicion}></PaginasExposiciones>                                                      
                             )
@@ -265,7 +229,7 @@ class VerJuegos extends React.Component {
                         <br></br>
                         
                         <div className="form-group">                                
-                            <input autoFocus required placeholder="Escriba el ID: " type="number" id="id" className="FondoInput" onChange={this.manejarCambio} value={this.state.data.id} >
+                            <input autoFocus required placeholder="Write the ID: " type="number" id="id" className="FondoInput" onChange={this.manejarCambio} value={this.state.data.id} >
                             </input>
                         </div>
                                              
@@ -301,8 +265,8 @@ class VerJuegos extends React.Component {
         
         const continuar = () =>{
             swal({
-              title: "¡Eliminar!",
-              text: "¡Eliminando Exposición!",
+              title: "¡Remove!",
+              text: "¡Eliminating Game!",
               icon: "success",                        
             }).then(function() {
                 window.location = "/AdministrarExposiciones";                            
@@ -312,7 +276,7 @@ class VerJuegos extends React.Component {
         const detener = () =>{
             swal({
               title: "¡Error!",
-              text: "¡No existe la exposición! ¡No es el propietario!",
+              text: "¡the game does not exist! ¡not the owner!",
               icon: "error",
               timer: 6000,
             });
@@ -356,8 +320,8 @@ class VerJuegos extends React.Component {
 
         const continuar = () =>{
             swal({
-                title: "¡Felicitaciones!",
-                text: "¡Ahora podras acceder a esta exposición!",
+                title: "¡Congratulations!",
+                text: "¡Now you can access this game!",
                 icon: "success",                        
             }).then(function() {
                     
@@ -369,7 +333,7 @@ class VerJuegos extends React.Component {
         const detener = () =>{
             swal({
               title: "¡Error!",
-              text: "¡No existe esa exposición!",
+              text: "¡the game does not exist!",
               icon: "error",
               timer: 6000,
             });
@@ -399,8 +363,8 @@ class VerJuegos extends React.Component {
 
         const continuar = () =>{
             swal({
-                title: "¡Felicitaciones!",
-                text: "¡Ahora podras editar esta exposición!",
+                title: "¡Congratulations!",
+                text: "¡Now you can edit this game!",
                 icon: "success",                        
             }).then(function() {
                     window.location = "/EditarExposicionesVirtuales";
@@ -411,7 +375,7 @@ class VerJuegos extends React.Component {
         const detener = () =>{
             swal({
               title: "¡Error!",
-              text: "¡No existe esa exposición!",
+              text: "¡the game does not exist!",
               icon: "error",
               timer: 6000,
             });
@@ -419,8 +383,8 @@ class VerJuegos extends React.Component {
 
         const detener2 = () =>{
             swal({
-              title: "¡Lo siento!",
-              text: "¡No eres propietario de la exposición!",
+              title: "¡Sorry!",
+              text: "¡the game does not existn!",
               icon: "error",
               timer: 6000,
             });

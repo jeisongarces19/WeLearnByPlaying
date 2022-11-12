@@ -95,7 +95,7 @@ class MenuUsuario extends React.Component {
                             </img>
                       </div>
 
-                      <h1 className="menuletra">¡BIENVENIDO {this.state.data.name.toUpperCase()}!</h1>  
+                      <h1 className="menuletra">¡WELCOME {this.state.data.name.toUpperCase()}!</h1>  
                      
                       <div className="separador">
 
@@ -141,8 +141,8 @@ class MenuUsuario extends React.Component {
 
         const continuar = () =>{
             swal({
-              title: "Solicitud",
-              text: "Ha solicitado ser Administrador. Muy pronto conocera la respuesta",
+              title: "Request",
+              text: "You have applied to be an Administrator. Very soon you will know the answer",
               icon: "success",              
             }).then(function() {
                 window.location = "/MenuUsuario";
@@ -151,20 +151,20 @@ class MenuUsuario extends React.Component {
         const detener = () =>{
             swal({
               title: "Error",
-              text: "Surgio un error al solicitar ser Administrador",
+              text: "An error occurred when requesting to be an Administrator",
               icon: "error",
               dangerMode: true,
             })
             .then(willDelete => {
               if (willDelete) {
-                swal("Volver a intentar!");
+                swal("¡Try again!");
               }
             });
         }        
         evento.preventDefault();
         const cargaUtil = JSON.stringify(this.state.req_admin);
         //const cargaUtil = JSON.stringify(this.state.data);
-        console.log(cargaUtil); 
+        //console.log(cargaUtil); 
 
         var respuesta = await fetch(`https://proyecto-meca-cali.herokuapp.com/Users/Update/req_admin`, 
         {
@@ -175,7 +175,7 @@ class MenuUsuario extends React.Component {
         //console.log("respuesta de todo",respuesta) 
        
         var statusr=respuesta.status; 
-        console.log("statusr de todo",statusr)         
+        //console.log("statusr de todo",statusr)         
         
         if (statusr===200) {
            

@@ -1,8 +1,7 @@
-
 import React,{useState} from 'react';
 //import Constantes from "../Constantes";
 
-import '../Styles/Administrargrados.css';
+import '../Styles/Administrarvideos.css';
 import '../Styles/administrarExposiciones.css';
 
 import swal from 'sweetalert';
@@ -23,10 +22,10 @@ function ObservarDirecto(props) {
     const continuar = () =>{
         swal({
           title: "¡Congratulations!",
-          text: "¡Now you can access this grade!"+props+ "",
+          text: "¡Now you can access this videos!"+props+ "",
           icon: "success",                        
         }).then(function() {            
-            window.location = "/AdministrarCursos";            
+            window.location = "/ExposicionesVirtuales";            
         });
     }
 
@@ -35,9 +34,8 @@ function ObservarDirecto(props) {
 }
 
 
-
-function PaginasExposiciones(props) {
-  const [pagina, setPagina] = useState(1);
+function PaginasExposiciones (props) {
+  const [pagina, setPagina] = useState (1);
   
   var tam;
   var mq = window.matchMedia( "(min-width: 600px)" );
@@ -49,6 +47,7 @@ function PaginasExposiciones(props) {
   }
 
   //console.log("tamaño",tam)
+
 
   var [porPagina] = useState (tam);
 
@@ -70,14 +69,16 @@ function PaginasExposiciones(props) {
         <div key={i} className={styles.pokeContainer}>
 
 
-            <button id="expo" onClick={() => ObservarDirecto(Expo.id)}>
-
+            <button id="expo">
+              {/*console.log("ingreso")*/} 
               <h3>ID: {Expo.id}</h3>  
               <div className={styles.imgContainer}>
-                <img src={Expo.picture_grade} alt={Expo.name_grade} />
-              </div>              
-              <p>{Expo.name_grade}</p>  
-              <p>{Expo.describe}</p> 
+                <a href={Expo.url}>
+                    <img src={Expo.picture} alt={Expo.title} />
+                </a>
+              </div>
+              <p >{Expo.title}</p>
+              <p >{Expo.description}</p>  
             </button>
 
         </div>
@@ -90,7 +91,7 @@ function PaginasExposiciones(props) {
 }
 
 
-class AdministrarGrados extends React.Component{
+class AdministrarVideos extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -102,64 +103,30 @@ class AdministrarGrados extends React.Component{
           },
         };
 
-        this.componentDidMount1 = this.componentDidMount1.bind(this);
         this.componentDidMount2 = this.componentDidMount2.bind(this);
         this.manejarCambio = this.manejarCambio.bind(this);  
-        //this.editarExposicion = this.editarExposicion.bind(this);
+        this.editarExposicion = this.editarExposicion.bind(this);
         this.observarExposicion = this.observarExposicion.bind(this);
         this.eliminarExposicion = this.eliminarExposicion.bind(this);      
         
     }
 
-    async componentDidMount1() {
-
-        var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Grade`, 
-        {
-            method: "GET",    
-        });            
-        
-        var existe;
-        var statusr=respuesta.status;  
-
-        if (statusr===200) {
-            existe= await respuesta.json(); 
-
-            //console.log(existe)
-            
-            this.setState({
-                data: {
-                    id:  this.state.data.id, 
-                    Exposiciones:  existe,  
-                    busqueda: this.state.data.busqueda,
-                    BusquedaExposicion: this.state.data.BusquedaExposicion,                         
-                }
-            });
-        }
-    }
-
-
+   
 
     async componentDidMount2() {
 
         if (this.state.data.busqueda==="") {
             
-            var respuesta2 = await fetch(`https://fun-english-cali.herokuapp.com/Grade`, 
+            var respuesta2 = await fetch(`https://fun-english-cali.herokuapp.com/Lesson/Search/lesson_type_id/`+3, 
             {
                 method: "GET",    
             });            
             
             var existe2;
-            var statusr=respuesta2.status; 
-
-            var respuestaActive;
-            var Contentsresult;
+            var statusr=respuesta2.status;  
 
             if (statusr===200) {
-                existe2= await respuesta2.json();
-                respuestaActive=existe2;
-                Contentsresult= respuestaActive.filter(obj => (obj.is_active===true));
-                //console.log(existe2);
-                //console.log(Contentsresult);
+                existe2= await respuesta2.json(); 
                 
                 this.setState({
                     data: {
@@ -172,7 +139,7 @@ class AdministrarGrados extends React.Component{
             }
 
         }else{        
-            var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Grade/Search/name_grade/`+this.state.data.busqueda, 
+            var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Lesson/Search/title/`+this.state.data.busqueda+`/lesson_type_id/`+3, 
             {
                 method: "GET",    
             });            
@@ -182,7 +149,8 @@ class AdministrarGrados extends React.Component{
             statusrr=respuesta.status;  
 
             if (statusrr===200) {
-                existe= await respuesta.json();                 
+                existe= await respuesta.json();  
+                //console.log("existe",existe);              
                 this.setState({
                     data: {
                         id:  this.state.data.id, 
@@ -200,32 +168,32 @@ class AdministrarGrados extends React.Component{
     render() {
         return (
     
-            <div className="columns central">
+            <div className="columns centralv">
 
               <div className="column"></div>
 
                 <div className="column is-two-thirds" >
 
-                    <div className="cardAdmGrados">
+                    <div className="cardAdmVideos">
                     <center>
 
-                        <h1 className="adminExpoletra"> ¡GRADES🎓! </h1>   
+                        <h1 className="adminExpoletra"> ¡VIDEOS 🎥! </h1>   
 
                         <br></br>
 
                         <div className="form-group">                                
-                            <input autoFocus required placeholder="Search By Name" type="text" id="busqueda" className="FondoInput" onChange={this.manejarCambio} value={this.state.data.busqueda}>
+                            <input autoFocus required placeholder="Search By Title" type="text" id="busqueda" className="FondoInputVideos" onChange={this.manejarCambio} value={this.state.data.busqueda} >
                             </input>
                         </div>
 
                         <div className="form-group">
                             <button className="button is-success mt-2" onClick={this.componentDidMount2}>
-                                Show Grades
+                                Show Videos
                             </button>
                         </div>
 
                         {this.state.data.BusquedaExposicion.length===0 ?(
-                            <h3>Loading...Push me</h3>
+                            <h3>Loading...</h3>
                             ):( 
                                 <PaginasExposiciones todo={this.state.data.BusquedaExposicion}></PaginasExposiciones>                                                      
                             )
@@ -234,29 +202,26 @@ class AdministrarGrados extends React.Component{
                         <br></br>
                         
                         <div className="form-group">                                
-                            <input autoFocus required placeholder="Write the ID: " type="number" id="id" className="FondoInput" onChange={this.manejarCambio} value={this.state.data.id}>
+                            <input autoFocus required placeholder="Write the ID: " type="number" id="id" className="FondoInputVideos" onChange={this.manejarCambio} value={this.state.data.id} >
                             </input>
                         </div>
-                                             
-
+                                      
                         <div className="form-group">
-                            <button className="button is-success mt-2" onClick={this.observarExposicion}>
-                                See Grade
+                            <button className="button is-primary mt-2">
+                                <a rel="noreferrer" href="/CrearVideos">Create Videos</a>
                             </button>
                         </div>
 
-
-
                         <div className="form-group">
-                            <button className="button is-primary mt-2">
-                                <a rel="noreferrer" href="/CrearGrados">Create Grades</a>
+                            <button className="button is-success mt-2" onClick={this.editarExposicion}>
+                                Edit Videos
                             </button>
                         </div>
 
 
                         <div className="form-group">
                             <button className="button is-success mt-2" onClick={this.eliminarExposicion}>
-                                Dalete Grades
+                                Dalete Videos
                             </button>
                         </div>
 
@@ -284,27 +249,26 @@ class AdministrarGrados extends React.Component{
         const continuar = () =>{
             swal({
               title: "¡Remove!",
-              text: "¡Remove Grade!",
+              text: "¡Remove Videos!",
               icon: "success",                        
             }).then(function() {
-                window.location = "/AdministrarGrados";                            
+                window.location = "/AdministrarVideos";                            
             });
         }
 
         const detener = () =>{
             swal({
               title: "¡Error!",
-              text: "¡There is no game! You are not the owner!",
+              text: "¡There is no Videos ! You are not the owner!",
               icon: "error",
               timer: 6000,
             });
         }    
-  
 
         //console.log("respuesta de todo",id_ser3+`/`+this.state.data.id) 
         
 
-        var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Grade/Delete/`+parseInt(this.state.data.id), 
+        var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Lesson/Delete/`+parseInt(id_ser3)+`/`+parseInt(this.state.data.id)+``, 
         {
             method: "DELETE",    
         });
@@ -340,11 +304,11 @@ class AdministrarGrados extends React.Component{
         const continuar = () =>{
             swal({
                 title: "!Congratulations!",
-                text: "¡Now you can access this grade!",
+                text: "¡Now you can access this Videos !",
                 icon: "success",                        
             }).then(function() {
                     
-                    window.location = "/AdmnistrarCursos";
+                    window.location = "/AdmnistrarVideos";
                     
                 });
         }
@@ -352,13 +316,13 @@ class AdministrarGrados extends React.Component{
         const detener = () =>{
             swal({
               title: "¡Error!",
-              text: "¡This grade does not exist!",
+              text: "¡This Videos  does not exist!",
               icon: "error",
               timer: 6000,
             });
         }  
 
-        var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Grade/Search/id/`+parseInt(this.state.data.id), 
+        var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Lesson/Search/id/`+parseInt(this.state.data.id), 
         {
             method: "GET",    
         });   
@@ -375,13 +339,75 @@ class AdministrarGrados extends React.Component{
         
     }
 
-
-
     
 
+     async editarExposicion(evento){
+        evento.preventDefault();
+
+        const continuar = () =>{
+            swal({
+                title: "¡Congratulations!",
+                text: "¡Now you can access this Videos!",
+                icon: "success",                        
+            }).then(function() {
+                    window.location = "/EditarVideos";
+                    
+                });
+        }
+
+        const detener = () =>{
+            swal({
+              title: "¡Error!",
+              text: "¡This Videos does not exist!",
+              icon: "error",
+              timer: 6000,
+            });
+        }  
+
+        const detener2 = () =>{
+            swal({
+              title: "¡Sorry!",
+              text: "¡You do not own the Videos!",
+              icon: "error",
+              timer: 6000,
+            });
+        }  
+
+        var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/Lesson/Search/id/`+this.state.data.id, 
+        {
+            method: "GET",    
+        });   
+
+        var existe;
+        existe= await respuesta.json();   
+
+        if (Object.keys(existe).length === 0) {            
+            detener()
+        }else{
+
+            //var respuesta2 = await fetch(`https://fun-english-cali.herokuapp.com/Lesson/`+parseInt(this.state.data.id)+`/IsOwner/`+parseInt(id_ser3)+``, 
+            var respuesta2 = await fetch(`https://fun-english-cali.herokuapp.com/Lesson/Search/id/`+this.state.data.id,
+            {
+                method: "GET",    
+            }); 
+
+            var statusexpo;
+            statusexpo= respuesta2.status; 
 
 
-  
+            if (statusexpo===200) {
+                //console.log("llego hasta el final")
+                cookies.set('idexpo', this.state.data.id, {path: "/"});
+                continuar()
+
+            }else{
+                detener2()    
+            }
+            
+        }           
+        
+    }
+    
 
     manejarCambio(evento) {
 
@@ -398,4 +424,4 @@ class AdministrarGrados extends React.Component{
     
 }
 
-export default AdministrarGrados;
+export default AdministrarVideos;

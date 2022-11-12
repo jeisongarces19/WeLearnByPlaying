@@ -62,7 +62,7 @@ class NavAdmin extends React.Component {
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/AdministrarJuegos"> MANAGE GAMES 🕵</a>
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/AdministrarGrados"> MANAGE GRADES 🎓</a>
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/AdministrarCursos"> MANAGE COURSES 🎓</a>
-                            
+                            <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/AdministrarVideos"> MANAGE VIDEOS 🎥</a>
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/AdministrarExposiciones"> MANAGE ACIVITYS 📌</a>
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/CrearExposicionesVirtuales">CREATE CONTENTS 🧮</a>
                             

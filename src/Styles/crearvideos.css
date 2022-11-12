@@ -1,0 +1,87 @@
+
+.FondoInputCrearV{
+    
+    background-color: #ffffffc4;
+    border: 1px solid rgb(0 0 0 / 50%);
+    border-radius: 1.00rem;
+    padding: 5px 20px 5px;
+
+}
+
+.form-control {
+    background-color: hsl(0deg 0% 100% / 32%);
+    
+}
+
+
+
+a:visited {
+  color: #ffffff;
+}
+
+.success2 {
+    background-color: #08d1ff73;
+    border-color: transparent;
+    color: #fff;
+}
+
+.colorletra {
+    color: #000000;
+    
+    line-height: 1.5;
+}
+
+
+.centralcv{
+    padding: 40px 0px 70px;
+    
+}
+
+
+
+
+.fin-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.cardCrearVideos {
+    position: relative;
+    display: flex;
+    padding: 20px 10px 25px;
+    /* flex-direction: column; */
+    background-color: #ffffff26;
+    /* background-clip: border-box; */
+    /* border: 1px solid rgb(0 0 0 / 58%); */
+    %): ;
+    */: ;
+    border-radius: 1.25rem;
+    /* flex-wrap: wrap; */
+    /* align-content: space-around; */
+    justify-content: center;
+}
+
+.crearExposicionvideos{
+    font-size: 2.4rem !important;
+    font-family: math;
+    color: #000000;
+    text-align: center;
+}

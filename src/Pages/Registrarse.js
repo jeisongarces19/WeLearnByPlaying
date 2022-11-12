@@ -185,7 +185,7 @@ class Registrarse extends React.Component {
        
         const cargaUtil = JSON.stringify(this.state.data);
 
-        console.log(cargaUtil);   
+        //console.log(cargaUtil);   
 
         var respuesta = await fetch(`https://fun-english-cali.herokuapp.com/User/Create`, 
         {
@@ -193,7 +193,7 @@ class Registrarse extends React.Component {
             body: cargaUtil,   
         });
 
-        console.log("respuesta de todo",respuesta) 
+        //console.log("respuesta de todo",respuesta) 
 
 
        

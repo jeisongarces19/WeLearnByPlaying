@@ -68,8 +68,8 @@ class Nav extends React.Component {
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/VErAdministrarCursos"> COURSES 🎓</a>
                             
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/AdministrarExposiciones"> MANAGE ACIVITYS 📌</a>
-                            {/*<a onClick={this.ocultarMenu} activeclassname="is-active" className="navbar-item" href="/OpcionesAdministrativas">MANAGE USERS</a>
-                            <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/EditarKit"> MODIFY KIT 🎓</a>*/}
+                            <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/AdministrarVideos"> MANAGE VIDEOS 🎥</a>
+                            
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/CrearExposicionesVirtuales">CREATE CONTENTS 🧮</a>
                             {/*<a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/EditarExposicionesVirtuales">EDIT CONTENTS</a>
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/ExposicionesVirtuales">SEE CONTENTS</a>

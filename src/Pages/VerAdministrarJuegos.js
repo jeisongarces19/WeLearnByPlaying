@@ -204,7 +204,7 @@ class VerAdministrarJuegos extends React.Component {
                     <div className="cardJuego">
                     <center>
 
-                        <h1 className="adminExpoletraJuego"> ¡GAMES🎮! </h1>   
+                        <h1 className="adminExpoletraJuego"> ¡GAMES 🎮! </h1>   
 
                         <br></br>
 

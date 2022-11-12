@@ -68,7 +68,7 @@ class CrearGradosYCursos extends React.Component {
 
                     <div className="cardCrearExposicion">
                     <center>
-                        <h1 className="crearExposicionletra"> ¡GRADES! </h1>                
+                        <h1 className="crearExposicionletra"> ¡GRADES 🎓! </h1>                
                         
                         <form className="" onSubmit={this.manejarEnvioDeFormulario}>
 
@@ -85,7 +85,7 @@ class CrearGradosYCursos extends React.Component {
                             </div>  
 
                             <div className="form-group">
-                                <input autoFocus required placeholder="🅱️ Imagen representativa" type="text" id="picture"className="FondoInput"  onChange={this.manejarCambio} value={this.state.data.picture} >
+                                <input autoFocus required placeholder="🅱️ Representative Image" type="text" id="picture"className="FondoInput"  onChange={this.manejarCambio} value={this.state.data.picture} >
                                 </input>
                             </div>                            
                                                     
@@ -107,7 +107,7 @@ class CrearGradosYCursos extends React.Component {
 
                     <div className="cardCrearExposicion">
                     <center>
-                        <h1 className="crearExposicionletra"> ¡CURSES! </h1>                
+                        <h1 className="crearExposicionletra"> ¡CURSES 🎓! </h1>                
                         
                         <form className="" onSubmit={this.manejarEnvioDeFormulario}>
 
@@ -124,7 +124,7 @@ class CrearGradosYCursos extends React.Component {
                             </div>  
 
                             <div className="form-group">
-                                <input autoFocus required placeholder="🅱️ Imagen representativa" type="text" id="picture"className="FondoInput"  onChange={this.manejarCambio2} value={this.state.data1.picture} >
+                                <input autoFocus required placeholder="🅱️ Representative Image" type="text" id="picture"className="FondoInput"  onChange={this.manejarCambio2} value={this.state.data1.picture} >
                                 </input>
                             </div>                            
                                                     

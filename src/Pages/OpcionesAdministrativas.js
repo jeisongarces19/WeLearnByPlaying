@@ -239,7 +239,7 @@ class OpcionesAdministrativas extends React.Component {
 
                           {this.state.data.Usuarios.length===0 ?(
 
-                            <h3>Cargando...</h3>
+                            <h3>Loading...</h3>
                             ):(
                               
                               <ColumnGroupingTable todo={this.state.data.Usuarios}></ColumnGroupingTable>                         
@@ -274,8 +274,8 @@ class OpcionesAdministrativas extends React.Component {
         
         const continuar = () =>{
             swal({
-              title: "¡Actualizar!",
-              text: "¡Se actualizo el tipo de usuario!",
+              title: "¡Updated!",
+              text: "¡Updated user type!",
               icon: "success",                        
             }).then(function() {
                 window.location = "/OpcionesAdministrativas";                            
@@ -284,8 +284,8 @@ class OpcionesAdministrativas extends React.Component {
 
         const detener = () =>{
             swal({
-              title: "¡Surgio un error!",
-              text: "¡El usuario no existe!",
+              title: "¡I got an error!",
+              text: "¡Username does not exist!",
               icon: "error",
               timer: 6000,
             });
@@ -336,8 +336,8 @@ class OpcionesAdministrativas extends React.Component {
         
         const continuar = () =>{
             swal({
-              title: "¡Eliminar!",
-              text: "¡Eliminando Usuario!",
+              title: "¡Remove!",
+              text: "¡Deleting User!",
               icon: "success",                        
             }).then(function() {
                 window.location = "/OpcionesAdministrativas";                            
@@ -347,7 +347,7 @@ class OpcionesAdministrativas extends React.Component {
         const detener = () =>{
             swal({
               title: "¡Error!",
-              text: "¡Surgio un error!",
+              text: "¡I got an error!",
               icon: "error",
               timer: 6000,
             });

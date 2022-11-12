@@ -207,9 +207,6 @@ function Videos(props) {
                             className="react-player"
                         />
                     </div>
-     
-
-
                   
                 </div>
                 ))}
@@ -301,17 +298,17 @@ function PROTOTIPO1(props){
         <br></br>
 
         <div className="">
-            <h2 className="negrilla" >Subtitulo</h2>
+            <h2 className="negrilla" >Subtitle</h2>
             <p  className="negrilla"> {Informacion.description} </p>                
         </div> 
 
         <br></br>
 
         <div className="bordeocuadro">
-            <h2 className="negrilla">Parrafos:</h2>
+            <h2 className="negrilla">Paragraphs:</h2>
             
             {Informacion.text2.length===0 ?(
-                <h2>Loading Parrafos...</h2>
+                <h2>Loading Paragraphs...</h2>
                 ):( 
                     <Parrafos informacionsub={Informacion.text2}></Parrafos>                                                                       
                 )
@@ -324,7 +321,7 @@ function PROTOTIPO1(props){
         <br></br>
 
         <div className="">
-            <h2 className="EditarExposicionletra">Bibliografia</h2>
+            <h2 className="EditarExposicionletra">Bibliography</h2>
             <Biblio infob={Informacion.bibliography}></Biblio>             
         </div> 
 
@@ -346,7 +343,7 @@ function PROTOTIPO1(props){
         <br></br>
 
         <div className="">
-            <h2 className="EditarExposicionletra">Imagenes</h2>
+            <h2 className="EditarExposicionletra">Images</h2>
             {Informacion.path2.length===0 ?(
                 <h2>Loading Photos...</h2>
                 ):( 
@@ -398,7 +395,7 @@ function PROTOTIPO2(props){
         <div className="reducirActivityExpo">
             <div className="cardDescriptionExpo">
                 {Informacion.text2.length===0 ?(
-                    <h2>Cargando Parrafos...</h2>
+                    <h2>Loading Paragraphs...</h2>
                     ):( 
                         <Parrafos informacionsub={Informacion.text2}></Parrafos>                                                                       
                     )
@@ -410,7 +407,7 @@ function PROTOTIPO2(props){
         
         <div className="cardImagenExpo">
             {Informacion.path2.length===0 ?(
-                <h2>Cargando imagenes...</h2>
+                <h2>Loading Images...</h2>
                 ):( 
                     <PaginasExposiciones informacionpath={Informacion.path2}></PaginasExposiciones>                                                    
                     
@@ -428,7 +425,7 @@ function PROTOTIPO2(props){
         <div className="cardVideoExpo">
 
             {Informacion.video2.length===0 ?(
-                <h2>Cargando videos...</h2>
+                <h2>Loading videos...</h2>
                 ):( 
                     <Videos informacionvideo={Informacion.video2}></Videos>                                                   
                     
@@ -570,28 +567,28 @@ class EditarExposicionesVirtuales extends React.Component {
             var Title=Exposition.title;    
             var URL=Exposition.url;   
             
-            if (Audio===null) {
+            if (Audio==null) {
               Audio="";
             }
-            if (Background===null) {
+            if (Background==null) {
               Background="";
             }
-            if (Bibliography===null) {
+            if (Bibliography==null) {
               Bibliography="";
             }
-            if (Description===null) {
+            if (Description==null) {
               Description="";
             }        
-            if (Picture===null) {
+            if (Picture==null) {
               Picture="";
             }
-            if (Structure===null) {
+            if (Structure==null) {
               Structure="1";
             }
-            if (Title===null) {
+            if (Title==null) {
               Title="";
             }
-            if (URL===null) {
+            if (URL==null) {
               URL="";
             }
 
@@ -642,7 +639,7 @@ class EditarExposicionesVirtuales extends React.Component {
             ExpositionSub= await respuesta1.json(); 
             //console.log("la respuesta de los subtilos", ExpositionSub)
             
-            if (ExpositionSub===null) {
+            if (ExpositionSub==null) {
               ExpositionSub=[];
             }
            
@@ -676,7 +673,7 @@ class EditarExposicionesVirtuales extends React.Component {
         if (statusv===200) {
             ExpositionVideo= await respuesta2.json(); 
             //console.log("la respuesta", ExpositionVideo)
-            if (ExpositionVideo===null) {
+            if (ExpositionVideo==null) {
               ExpositionVideo=[];
             }
             this.setState({
@@ -708,7 +705,7 @@ class EditarExposicionesVirtuales extends React.Component {
         if (statusPath===200) {
             ExpositionPath= await respuesta3.json(); 
             //console.log("la respuesta", ExpositionPath)
-            if (ExpositionPath===null) {
+            if (ExpositionPath==null) {
               ExpositionPath=[];
             }
             this.setState({
@@ -743,7 +740,7 @@ class EditarExposicionesVirtuales extends React.Component {
             ExpositionParrafo= await respuesta4.json(); 
             //console.log("la respuesta de los parrafos", ExpositionParrafo)
             
-            if (ExpositionParrafo===null) {
+            if (ExpositionParrafo==null) {
               ExpositionParrafo=[];
             }
            

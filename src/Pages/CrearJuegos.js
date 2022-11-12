@@ -62,7 +62,7 @@ class CrearJuegos extends React.Component {
 
                     <div className="cardCrearJuegos">
                     <center>
-                        <h1 className="crearExposicionletra"> ¡GAMES 🎮🕹! </h1>                
+                        <h1 className="crearExposicionletra"> ¡🎮 GAMES 🕹! </h1>                
                         
                         <form className="" onSubmit={this.manejarEnvioDeFormulario}>
 
@@ -151,7 +151,7 @@ class CrearJuegos extends React.Component {
             body: cargaUtil,   
         });
 
-        console.log("respuesta de todo",respuesta) 
+        //console.log("respuesta de todo",respuesta) 
 
 
        
@@ -159,7 +159,7 @@ class CrearJuegos extends React.Component {
        
         
         if (statusr===201) {
-            console.log(statusr)
+            //console.log(statusr)
            
             this.setState({
                 data: {
