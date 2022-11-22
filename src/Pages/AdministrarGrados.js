@@ -256,7 +256,7 @@ class AdministrarGrados extends React.Component{
 
                         <div className="form-group">
                             <button className="button is-success mt-2" onClick={this.eliminarExposicion}>
-                                Dalete Grades
+                                Delete Grades
                             </button>
                         </div>
 

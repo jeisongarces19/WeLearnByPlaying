@@ -67,7 +67,7 @@ class NavSinLog extends React.Component {
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/Videos"> VIDEOS🎥</a>
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/Kit"> KIT📝</a>
                             <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/Login"> LOG IN 👤 </a> 
-                            <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/Registrarse">SINT IN 📝</a>    
+                            <a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/Registrarse">SIGN IN 📝</a>    
                             
                             {/*<a onClick={this.ocultarMenu} activeclassname="is-active" style={{color:'black'}} className="navbar-item" href="/Pregunta">QUESTIONS ❓</a>
                             

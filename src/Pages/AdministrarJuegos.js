@@ -235,7 +235,7 @@ class AdministrarJuegos extends React.Component {
 
                         <div className="form-group">
                             <button className="button is-success mt-2" onClick={this.eliminarExposicion}>
-                                Dalete Game
+                                Delete Game
                             </button>
                         </div>
 
