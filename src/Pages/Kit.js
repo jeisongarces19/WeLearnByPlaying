@@ -100,11 +100,12 @@ function PaginasContentsFinal (props) {
   var mq = window.matchMedia( "(min-width: 600px)" );
   var tam;
 
-  if(mq.matches) {
+  if(mq.matches){
     tam=3;
   }else {
     tam=2;
   }
+  tam=1;
 
   const [porPagina] = useState (tam);
 
@@ -112,6 +113,7 @@ function PaginasContentsFinal (props) {
   const Expo=props.informacionpath;
   //console.log("lo que llega a PaginasContentsFinal:",Expo)
   const maximo = Expo.length / porPagina;
+  //console.log("maximo",maximo)
 
 
   return (
@@ -126,7 +128,7 @@ function PaginasContentsFinal (props) {
                  
                     <BasicModal imagen={Expo.path}></BasicModal>
                     <div className={styles.imgContainer}>
-                        <img src={Expo.path} alt="No cargo la imagen" >
+                        <img style={{height:"50%"}} src={Expo.path} alt="No cargo la imagen" >
                         </img>           
                     </div>         
               
@@ -173,7 +175,7 @@ function Videos(props) {
                             url={videosinfo2.path}
                             controls
                             width='100%'
-                            height='100%'
+                            height='115%'
                             className="react-player"
                             loop
                         />
@@ -313,7 +315,9 @@ function PROTOTIPO1(props){
 
             <div className="cardTituloKit">
                 <center>   
-                    <h1 className="loginletraTituloKit">We Learn By Playing</h1>                
+                    <h1 className="loginletraTituloKit">We Learn By Playing</h1>
+                    <br></br>
+                    <h3 className="letraSubTituloKit">In this section you will find videos that can help you complete your classes with English by expanding your children's vocabulary learning through playful and didactic material, which is why we offer you the following activities:</h3>                
                 </center>
             </div>
             <br></br>

@@ -9,7 +9,11 @@
 
 }
 
-
+.letraSubTituloVideos{
+    font-size: 0.8cm;
+    font-family: auto cursive;
+    color: #000000;
+}
 
 .cardJuego {
     position: relative;

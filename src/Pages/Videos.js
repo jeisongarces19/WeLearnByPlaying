@@ -170,7 +170,10 @@ function PROTOTIPO1(props){
 
             <div className="cardTituloVideos">
                 <center>   
-                    <h1 className="loginletraTituloVideos">We Learn By Playing</h1>                
+                    <h1 className="loginletraTituloVideos">We Learn By Playing</h1>
+                    <br></br>
+                    <h3 className="letraSubTituloVideos">In this section you will find videos to implement them at any time of your English classes that you need them, or any active break and thus have a pleasant moment.</h3>                
+                    <br></br>           
                 </center>
             </div>
             <br></br>

@@ -22,6 +22,11 @@
     color: #000000;
 }
 
+.letraSubTituloVideos{
+    font-size: 1cm;
+    font-family: auto cursive;
+    color: #000000;
+}
 
 .LetraSubtituloVideos{
     font-size: 3rem !important;

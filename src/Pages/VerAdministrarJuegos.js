@@ -205,7 +205,9 @@ class VerAdministrarJuegos extends React.Component {
                     <center>
 
                         <h1 className="adminExpoletraJuego"> ¡GAMES 🎮! </h1>   
-
+                        <br></br>
+                        <h3 className="letraSubTituloVideos">In this section you will find educational games related to topics that are seen in the classes</h3>                
+                    
                         <br></br>
 
                         <div className="form-group">                                

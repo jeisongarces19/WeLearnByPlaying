@@ -178,7 +178,11 @@ class ListarExposicionesVirtuales extends React.Component {
                     <center>
 
                         <h1 className="adminExpoletra"> ¡ACTIVITYS! </h1>   
+                        
+                        <br></br>
 
+                        <h3 className="letraSubTituloactividades">In this section you will find activities for you to work with your students and thus improve, strengthen the knowledge of children through ICT:</h3>                
+                
                         <br></br>
 
                         <div className="form-group">                                
